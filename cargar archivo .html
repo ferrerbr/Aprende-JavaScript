@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+    <style>
+        :root{
+            --yellow-color:#F7DF1E;
+            --dark-color:#222;
+
+        }
+        .cards {
+            border: thin solid var(--dark-color);
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .card{
+            display: inline-block;
+            max-width: 100px;
+        }
+
+        .card figcaption{
+            padding: 1rem;
+        }
+
+        .rotate-45{
+            transform: rotate(45deg);
+        }
+
+        .rotate-135{
+            transform: rotate(135deg);
+        }
+
+        .opacity-80{
+            opacity: .8;
+        }
+
+        .sepia{
+            filter: sepia(1);
+        }
+        .eventos-flujos div{
+            padding: 4rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .uno{
+            background-color: #F7DF1E;
+        }
+        .dos{
+            background-color: gold;
+        }
+        .tres{
+            background-color: yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+    
+   <!-- <div class="inicio">-->
+
+        <h1>WEB APIs</h1>
+        <h2>DOM document objet model</h2>
+        <h3>BOM browser objet model</h3>
+        <h2>CSSOM CSS Objet model</h2>
+        <h2>WEB APIs</h2>
+        <ul>
+            <li>events</li>
+            <li>forms</li>
+            <li>AJAX-fetch</li>
+            <li>HISTORI</li>
+            <li>web storage</li>
+            <li>Geolocalizacion</li>
+            <li>DRAG &Drop</li>
+            <li>Index DB</li>
+            <li>Canvas</li>
+            <li>Match Media</li>
+
+        </ul>
+        <br><hr>
+        <br>
+        <h3>Manejo del dom</h3>
+        <p id="que-es"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus cupiditate ad laudantium aspernatur fuga at dicta obcaecati fugit hic optio labore et provident laborum laboriosam eveniet officia autem, nulla pariatur.</p>
+        <nav id="menu">
+            <ul>
+                <li><a href="">seccion 1</a></li>
+                <li><a href="">seccion 2</a></li>
+                <li><a href="">seccion 3</a></li>
+                <li><a href="">seccion 4</a></li>
+                <li><a href="">seccion 5</a></li>
+            </ul>
+        </nav>
+        <input type="text" name="nombre"  placeholder="Nombre">
+
+        <a class="link-dom" href="dom.html" style="background-color: cadetblue; color: black;" data-id="1" data-description="Document Objet Model">DOM</a><!-- nos permite crear nuestro porpios atribus DATA ATRIBUTES: inicar con la pabra (data-) y despues el nombre que queramos-->
+        <section class="cards">
+            <figure class="card">
+                <img src="./src/tecnologia.png" alt="Tech">
+                <figcaption>Tech</figcaption>
+            </figure>
+
+            <figure class="card">
+                <img src="./src/animales.png" alt="Animal">
+                <figcaption>Animals</figcaption>
+            </figure>
+        
+            <figure class="card">
+                <img src="./src/personas.png" alt="People">
+                <figcaption>People</figcaption>
+            </figure>
+
+            <figure class="card">
+                <img src="./src/arquitectura.png" alt="Arch">
+                <figcaption>Architecture</figcaption>
+            </figure>
+
+            <figure class="card">
+                <img src="./src/naturaleza.png" alt="Naturae">
+                <figcaption>Nature</figcaption>
+            </figure>
+            
+        </section>
+
+        <template id="template-card">
+            <figure class="card">
+                <img>
+                <figcaption></figcaption>
+            </figure>
+        </template>
+        <h3>EVENTOS EN JAVASCRIPS</h3>
+        <h4>Manejadores de eventos</h4>
+        <button onclick="alert('hola')">Evento con atributo HTML</button>
+        <button onclick="holaMundo()">Evento2 con atributo HTML</button>
+        <br><br>
+        <button id="eventoSemnatico">Evento con manejador Semantico</button>
+        <br><br>
+        <button id="eventoMultiple"> Evento con manejador multiple</button>
+        <br><br>
+        <button id="eventoRemover">Removiendo eventos con manejadores multiples</button>
+        <br><br><br>
+
+
+        <h4>Flujo de eventos</h4>
+        <section class="eventos-flujos">
+            <div class="uno"> 
+                1
+                <div class="dos">
+                    2
+                    <div class="tres">
+                        3
+                        <a href="https://jonmircha.com" target="_blank" rel="noopener">jonmircha.com</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <br><br>
+
+        <!--<script></script>-->
+        
+       
+
+
+
+<!--</div>-->
+   
+    
+
+   <!--<script src="./NodosElementosSelectores.js"></script>-->
+    <!--<script src="./DOM-AtributosyDataAttributes.js"></script>-->
+    <!--<script src="./DOM-EstilosyVariablesCSS.S.js"></script>-->
+    <!--<script src="./DOM-clasesCSS.js"></script>-->
+    <!--<script src="./Dom-textoYHTML.js"></script>-->
+    <!--<script src="./DOM-trasversing.js"></script>-->
+    <!--<script src="./DOM-creandoElementosYFragmentos.js"></script>-->
+    <!--<script src="./Dom-templatesHTML.js"></script>-->
+    <!--<script src="/DOM-ModificandoElementosOld.js"></script>-->
+    <!--<script src="./DOM-modificandoElementosNew.js"></script>-->
+    <!--<script src="./DOM-manejadoresdeEventos.js"></script>-->
+    <!--<script src="./Dom-eventosConParametros.js"></script>-->
+    <script src="./Dom-flujodeEventos.js"></script>
+    <script src="./DOM-stopPropagation.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
