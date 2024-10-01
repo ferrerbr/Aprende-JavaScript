@@ -38,7 +38,7 @@ const brandon = {
  console.log(brandon, typeof brandon);
 
  // como accedemos a los valores especificos de los valores
- //podemos acceder mediante los corechetes  colocando adentro entre comillar el nombre de la llave 
+ //podemos acceder mediante los corechetes  colocando adentro entre comillas el nombre de la llave 
  // podemos acceder mediante la notacion del punto
 
  console.log(brandon["nombre"]);
@@ -48,8 +48,8 @@ const brandon = {
 brandon.saludar();
  
 
-// cuando queremos acceder a una porpiedad  solo colocamos la notacion del punto para acceder a un metodo se colocan los corchetes al final 
-// un caso podria ser  en una caden cuando usamos  cadena.length accedemos a una propiedad y cadena.split("") si se usan los parentesis 
+// cuando queremos acceder a una porpiedad  solo colocamos la notacion del punto, para acceder a un metodo se colocan los corchetes al final 
+// un caso podria ser  en una cadena cuando usamos  cadena.length accedemos a una propiedad y cadena.split("") si se usan los parentesis 
 
 
 // para acceder a los elementos mas internos seguimos con la notacion del punto 
