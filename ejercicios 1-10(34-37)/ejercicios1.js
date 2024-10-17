@@ -12,7 +12,7 @@ function numCaracteres (objeto){
 
     }else if((typeof objeto) === "string"){
         
-        console.log("Esta cadena contiene ",objeto.length, " numero de caracteres");
+        console.log("Esta cadena contiene ",objeto.length, " caracteres");
     }else {
         console.error("Ingresaste algo que no es una cadena");
         
@@ -53,7 +53,7 @@ function recortarCadena (objeto,numero = 0 ){
     }
 }
 
-recortarCadena(cadena,5)
+recortarCadena(cadena,4)
  
 
 
@@ -100,28 +100,28 @@ separarCadena(cadena3," ")
 
 /**Ejercicio 1.4 */
 
-function repTexto (objeto,numero){
-    if(objeto ===""){
-        console.log("Porfavor ingresa almenos un caracter");
-        
-
-    }else if((typeof objeto) === "string"){
-        let texto =[];
-        for(let i = 0;i <=numero ; i++){
-            texto.push(objeto);
-            
-        }
-        let unido = texto.join(" ")
-        console.log(unido);
-        
-    }else {
-        console.error("Ingresaste algo que no es una cadena");
-        
+const repText = (objeto = "",numero = undefined)=>{
+    if(!objeto){
+        return console.warn("no ingresaste una cadena de caracteres")
     }
+    if(numero === undefined){
+       return console.warn("No ingresaste el numero de veces a repetir el texto")
+    }
+    if(numero === 0 ){
+        return console.info("el texto no se puede repetir cero veces ")
+    }
+    let lista =[]
+    for(let i = 1; i <= Math.abs(numero); i++){
+        lista.push(objeto)
+    }
+    lista = lista.join(" ")
+    console.log(lista);
+    
+
 }
 
 let cadena4 = "Estereotipo";
-repTexto(cadena4,5);
+repText(cadena4,-1);
 
 
 
